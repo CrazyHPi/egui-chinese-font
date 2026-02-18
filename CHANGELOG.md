@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-02-18
+
+### Changed
+- Updated to egui 0.33.2
+
 ## [0.1.0] - 2025-06-25
 
 ### Added
@@ -25,5 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - macOS: Support for PingFang SC, STHeiti, Hiragino Sans GB, Arial Unicode MS
 - Linux: Support for Noto Sans CJK, WQY MicroHei, Droid Sans Fallback, AR PL UMing
 
-[Unreleased]: https://github.com/username/egui-chinese-font/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/username/egui-chinese-font/releases/tag/v0.1.0
+[Unreleased]: https://github.com/CrazyHPi/egui-chinese-font/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/CrazyHPi/egui-chinese-font/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/CrazyHPi/egui-chinese-font/releases/tag/v0.1.0
