@@ -14,6 +14,7 @@
 //! setup_chinese_fonts(&ctx);
 //! ```
 
+use std::sync::Arc;
 use egui::{Context, FontData, FontDefinitions, FontFamily};
 
 /// Error type for font loading operations
@@ -59,7 +60,7 @@ pub fn setup_chinese_fonts(ctx: &Context) -> Result<(), FontError> {
     // Insert the Chinese font
     fonts.font_data.insert(
         "chinese".to_owned(),
-        chinese_font_data,
+        Arc::from(chinese_font_data),
     );
     
     // Configure font families
@@ -189,7 +190,7 @@ pub fn setup_custom_chinese_font(
     
     fonts.font_data.insert(
         name.to_owned(),
-        FontData::from_owned(font_data),
+        Arc::from(FontData::from_owned(font_data)),
     );
     
     fonts.families.entry(FontFamily::Proportional).or_default()
